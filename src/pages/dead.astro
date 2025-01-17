@@ -1,0 +1,82 @@
+---
+import CA from '@/components/CA.svelte'
+
+const title = 'DOGFLORK'
+const description = 'Meet DOGFLORK!✨'
+---
+
+<style lang="scss">
+  * {
+    font-family: 'Domine';
+  }
+
+  .narrative {
+    padding: 20px;
+  }
+
+  p {
+    padding: 10px 0;
+  }
+</style>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="view-transition" content="same-origin" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/jpg" href="/assets/logo.png" />
+    <meta name="generator" content={Astro.generator} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet" />
+
+    <title>{title}</title>
+  </head>
+  <style lang="scss" is:global>
+    @use 'src/sass/global.scss' as *;
+
+    .narrative {
+      position: relative;
+      .marco {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <div class="g-mini-wrapper">
+      <div class="narrative">
+        <img class="marco" src="/assets/marco.png" alt="" />
+        <p>Areno, un joven de 15 años con grandes ambiciones, creó una memecoin llena de creatividad.</p>
+
+        <p>
+          Inicialmente, su proyecto atrajo a varios inversores, pero la presión de las expectativas y las constantes demandas lo abrumaron
+          rápidamente.
+        </p>
+
+        <p>
+          Sin la experiencia necesaria para manejar la situación, decidió cerrar el canal del proyecto y apartarse. Aunque fue un revés
+          difícil, Areno obtuvo valiosas lecciones que lo prepararán para futuros desafíos.
+        </p>
+
+        <p>Areno siempre en nuestros corazones</p>
+      </div>
+
+      <CA client:visible />
+    </div>
+  </body>
+</html>
+
+<script>
+  import { animReveal } from '@/utils/reveal'
+
+  window.onload = () => {
+    setTimeout(() => {
+      animReveal()
+    }, 200)
+  }
+</script>
