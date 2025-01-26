@@ -34,7 +34,7 @@
 
     document.body.style.minHeight = `${window.innerHeight * 0.8 * sections}px`
 
-    console.log('Website created by: Scripted - https://x.com/cryptocodejeff')
+    console.log('Website created by: Scripted - https://x.com/scriptedsol')
   })
 
   const scrollEffect = () => {
@@ -268,7 +268,7 @@
     <a href="https://t.me/DOGFLORK" target="_blank">
       <Svg name="telegram" width="50" height="50" />
     </a>
-    <a href="https://x.com/dogflork" target="_blank">
+    <a href="https://x.com/Areno0ficial" target="_blank">
       <Svg name="twitter" width="50" height="50" />
     </a>
     <a href="https://www.youtube.com/@arenosol" target="_blank">
